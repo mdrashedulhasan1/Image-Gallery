@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            /* max-width: 90vw; */
+            display: grid;
+            grid-template-columns: repeat(4, minmax(250px, 1fr));
+            grid-template-rows: repeat(3, minmax(250, 1fr));
+            grid-gap:20px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width:1400px) {
+            .container{
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        } 
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <marquee scrollamount="30" behavior="" direction=""><h1>My Image Gallery</h1></marquee>
+    <div class="container">
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+        <div><img src="Rashedul Hasan.png" alt=""></div>
+    </div>
+</body>
+</html>
